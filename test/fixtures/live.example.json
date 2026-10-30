@@ -1,0 +1,13 @@
+{
+ "note": "Shape of the private file for RECOVERY_LIVE_FIXTURES. Real values never go in this repo.",
+ "A": { "sa": "0x<deployed account with 4 vaults>", "owner": "0x<its key>", "shares": ["<vault 1>", "<vault 2>", "<vault 3>", "<vault 4>"] },
+ "U": { "sa": "0x<never-activated account holding USDC>", "owner": "0x<its key>" },
+ "O": { "sa": "0x<account holding OpenCover>", "shares": "<OC shares>" },
+ "expectedUsdcA": "<minimum USDC the A batch delivers>",
+ "expectedUsdcU": "<USDC held by U>",
+ "unflatAccount": "0x<an unflat account>",
+ "unflatKey": "0x<the key of that account>",
+ "personalBlock": "<a block with ordinary transactions>",
+ "otherAccounts": [],
+ "testTxs": []
+}

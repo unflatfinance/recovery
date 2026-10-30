@@ -1,0 +1,28 @@
+{
+  "name": "recovery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "vitest run",
+    "test:offline": "vitest run test/plan.test.js test/destination.test.js test/assess.test.js test/security.test.js",
+    "test:chain": "vitest run test/chain.test.js test/ui.test.js",
+    "serve": "node build.mjs && python3 -m http.server 8787 --bind 127.0.0.1 --directory dist",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "permissionless": "0.2.57",
+    "viem": "2.56.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "happy-dom": "^18.0.1",
+    "node-html-parser": "7.0.1",
+    "vitest": "3.2.4"
+  },
+  "description": "Recover funds from an unflat smart account (Kernel v0.3.1 on Base) with your own wallet, without the unflat app.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20 <21"
+  }
+}
